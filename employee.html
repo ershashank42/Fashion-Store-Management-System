@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<title>Employee</title>
+<head>
+  <style>
+  body{
+      margin: 0;
+      padding: 0;
+      background: url(picture7.jpg);
+      background-size: cover;
+      font-family: sans-serif;
+  }
+  h1{
+	margin: 0;
+	text-align: center;
+	font-size: 30px;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.loginbox p{
+    margin: 10;
+    padding: 10;
+      color: white;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+.loginbox input[type="number"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.loginbox input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.loginbox input[type="textarea"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.loginbox a:hover
+{
+    color: #ffc107;
+}
+
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    align: center;
+}
+
+
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+    align: center;
+}
+</style>
+  </head>
+<body>
+  <div class="loginbox">
+<h1>Employee</h1>
+<form action="add_employee.php" method="post">
+    <p>Employee_ID <input type="number" name="e_id" placeholder="Enter employee id"></p>
+    <p>Employee_Name <input type="text" name="e_name" placeholder="Enter employee name"></p>
+    <p>Employee_Phone <input type="number" name="e_phone" placeholder="Enter employee phone"></p>
+    <p>Employee_Address <input type="textarea" name="e_add" placeholder="Enter address"></p>
+    <p>Gender <input type="text" name="gender" placeholder="Enter gender"></p>
+    <p>Position <input type="text" name="position" placeholder="Enter position"></p>
+    <p>Salary <input type="number" name="salary" placeholder="Enter salary"></p>
+    <p> <input type="submit" align="middle" value="Submit"></p>
+</form>
+<form action="getEmployeeInfo.php" method="post">
+<p> <input type="submit" align="middle" value="Get Employees Info"></p>
+</form>
+</body>
+</html>

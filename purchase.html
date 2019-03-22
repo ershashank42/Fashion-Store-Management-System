@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<title>purchase</title>
+<head>
+  <style>
+  body{
+      margin: 0;
+      padding: 0;
+      background: url(picture6.jpg);
+      background-size: cover;
+      font-family: sans-serif;
+  }
+  h1{
+	margin: 0;
+	text-align: center;
+	font-size: 30px;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.loginbox p{
+    margin: 10;
+    padding: 10;
+      color: white;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+.loginbox input[type="number"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.loginbox input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.loginbox a:hover
+{
+    color: #ffc107;
+}
+
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    align: center;
+}
+
+
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+    align: center;
+}
+</style>
+  </head>
+<body>
+<div class="loginbox">
+<h1>Purchase</h1>
+<form action="add_purchase.php" method="post">
+    <p>Purchase ID <input type="number" name="purch_id" placeholder="Enter purchase id"></p>
+    <p>Quantity <input type="number" name="qty" placeholder="Enter quantity"></p>
+    <p>Amount <input type="number" name="amt" placeholder="Enter amount"></p>
+    <p>Bill_Type <input type="text" name="bill_type" placeholder="Enter bill type"></p>
+    <p>Supplier ID <input type="number" name="supplier_id" placeholder="Enter supplier id"></p>
+    <p>Employee ID <input type="text" name="employee" placeholder="Enter employee id"></p>
+    <p> <input type="submit" align="middle" value="Submit"></p>
+</form>
+<form action="getPurchaseInfo.php" method="post">
+<p> <input type="submit" align="middle" value="Get All Purchase Info"></p>
+
+</body>
+</html>

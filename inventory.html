@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<title>Inventory</title>
+<head>
+  <style>
+  body{
+      margin: 0;
+      padding: 0;
+      background: url(picture1.jpg);
+      background-size: cover;
+      font-family: sans-serif;
+  }
+  h1{
+	margin: 0;
+	text-align: center;
+	font-size: 30px;
+  color: black;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.loginbox p{
+    margin: 10;
+    padding: 10;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loginbox input[type="number"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.loginbox input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.loginbox a:hover
+{
+    color: #ffc107;
+}
+
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    align: center;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+    align: center;
+}
+</style>
+  </head>
+<body>
+<div class="loginbox">
+<h1>Inventory</h1>
+<form action="add_inventory.php" method="post">
+    <p>Inventory_ID <input type="number" name="inv_id" placeholder="Enter inventory id"></p>
+    <p>Item_Name  <input type="text" name="item_name" placeholder="Enter item name"></p>
+    <p>Quantity  <input type="number" name="qty" placeholder="Enter Quantity"></p>
+    <p>Price <input type="number" name="price" placeholder="Enter price"></p>
+    <p>Type <input type="text" name="ty" placeholder="Enter type"></p>
+    <p>Purchase ID <input type="number" name="purchase_id" placeholder="Enter purchase id"></p>
+    <p> <input type="submit" align="middle" value="Submit"></p>
+</form>
+
+</body>
+</html>

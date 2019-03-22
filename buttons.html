@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body{
+      margin: 0;
+      padding: 0;
+      background: url(picture1.jpg);
+      background-size: cover;
+      font-family: sans-serif;
+  }
+
+  h2{
+	margin: 0;
+	text-align: center;
+	font-size: 30px;
+  color: black;
+  padding-top: 25px;
+  padding-bottom: 20px;
+	font-family: 'FontAwesome';
+}
+
+.btn {
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Green */
+.success {
+    color: green;
+}
+
+.success:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Blue */
+.info {
+    color: dodgerblue;
+}
+
+.info:hover {
+    background: #2196F3;
+    color: white;
+}
+
+/* Orange */
+.warning {
+    color: orange;
+}
+
+.warning:hover {
+    background: #ff9800;
+    color: white;
+}
+
+/* Red */
+.danger {
+    color: red;
+}
+
+.danger:hover {
+    background: #f44336;
+    color: white;
+}
+
+/* Gray */
+.default {
+    color: black;
+}
+
+.default:hover {
+    background: #e7e7e7;
+}
+</style>
+</head>
+<body>
+
+<h2>Dashboard</h2>
+
+<a href="bill.html"> <button type="submit" class="btn success" >Bill</button></a>
+<a href="brands.html"><button type= "submit" class="btn info">Brands</button></a>
+<a href="customer.html"><button type= "submit" class="btn warning">Customer</button></a>
+<a href="employee.html"><button type= "submit" class="btn danger">Employee</button></a>
+<a href="inventory.html"><button type= "submit" class="btn default">Inventory</button></a>
+<a href="purchase.html"><button type= "submit" class="btn success">Purchase</button></a>
+<a href="getSalesInfo.php"><button type= "submit" class="btn success">Sales</button></a>
+</body>
+</html>

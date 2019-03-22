@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<title>brands</title>
+<head>
+  <style>
+  body{
+      margin: 0;
+      padding: 0;
+      background: url(picture4.jpg);
+      background-size: cover;
+      font-family: sans-serif;
+  }
+  h1{
+	margin: 0;
+	text-align: center;
+	font-size: 30px;
+  color: black;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.loginbox p{
+    margin: 10;
+    padding: 10;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loginbox input[type="number"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.loginbox input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.loginbox a:hover
+{
+    color: #ffc107;
+}
+
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    align: center;
+}
+
+
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+    align: center;
+}
+</style>
+  </head>
+<body>
+  <div class="loginbox">
+<h1>Brands</h1>
+  <form action="add_brands.php" method="post">
+    <p>Brand_ID  <input type="number" name="br_id" placeholder="Enter brand id"></p>
+    <p>Supplier_ID <input type="number" name="sup_id" placeholder="Enter supplier id"></p>
+    <p>Brand_Name <input type="text" name="br_name" placeholder="Enter brand name"></p>
+    <p>Supplier_Name <input type="text" name="sup_name" placeholder="Enter supplier name"></p>
+    <p> <input type="submit" align="middle" value="Submit"></p>
+</form>
+<form action="getBrandInfo.php" method="post">
+<p> <input type="submit" align="middle" value="Get Brands Info"></p>
+</form>
+
+</body>
+</html>
